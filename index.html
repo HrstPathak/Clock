@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOCK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2015/11/07/20/56/clock-1032653__340.png">
+  <link rel="stylesheet" type="text/css" href="Clock.css">
+  <body>
+    <div class="outer_div">
+    <div class="heading">CL<i class="far fa-clock"></i>CK</div>
+    <div class="inner_div">
+    <div class="clock_selection">
+      <div class="Analog" id="Analog">ANALOG</div>
+      <hr class="midLine" />
+      <hr id="horizontal_line" class="horizontal_line" />
+      <div class="Digital" id="Digital">DIGITAL</div>
+    </div>
+    <div class="Analog_container">
+        <div class="Analog_img_container"><img src="CLOCK.png">
+            <div id="hour_hand" class="clock_hand"></div>
+            <div id="minute_hand" class="clock_hand"></div>
+            <div id="second_hand" class="clock_hand"></div>
+        <div class="center_block"></div>
+        
+    </div>
+    <div class="outer_digital_container">
+    <div class="Digital_container">
+      <div id="hour_digital" class="hour digitalTime">00
+      </div>
+      <div class="colon ">:</div>
+      <div onchange="MinuteChange()" id="min_digital" class="minute digitalTime"  ></div>
+          </div>
+          <div class="sec_am_pm">
+            <div id="sec_digital" class="sec_digital sec_am">00</div>
+            <div id="am_pm" class="am_pm sec_am">AM</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    <script src="Clock.js"></script>
+  </body>
+  </html>
